@@ -1,0 +1,7 @@
+﻿@using DropdownSpike.Models 
+@using DropdownSpike.ExtensionMethods
+@{ 
+    var items = typeof(Category).GetItems();
+}
+
+@Html.DropDownList("", items)
